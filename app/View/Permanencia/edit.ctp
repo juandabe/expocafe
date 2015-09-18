@@ -5,6 +5,7 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('lote');
+		echo $this->Form->input('id_exportador');
 		echo $this->Form->input('razon_social');
 		echo $this->Form->input('remesa');
 		echo $this->Form->input('sacos');
@@ -22,5 +23,7 @@
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Permanencium.id')), array('confirm' => __('Are you sure you want to delete # %s?', $this->Form->value('Permanencium.id')))); ?></li>
 		<li><?php echo $this->Html->link(__('List Permanencia'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

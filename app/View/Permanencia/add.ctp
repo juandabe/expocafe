@@ -4,6 +4,7 @@
 		<legend><?php echo __('Add Permanencium'); ?></legend>
 	<?php
 		echo $this->Form->input('lote');
+		echo $this->Form->input('id_exportador');
 		echo $this->Form->input('razon_social');
 		echo $this->Form->input('remesa');
 		echo $this->Form->input('sacos');
@@ -20,5 +21,7 @@
 	<ul>
 
 		<li><?php echo $this->Html->link(__('List Permanencia'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

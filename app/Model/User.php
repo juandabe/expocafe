@@ -114,5 +114,26 @@ class User extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
-		));
+		),
+                'Permanencium' => array(
+                                'className' => 'Permanencium',
+                                'foreignKey' => 'id_exportador',
+                                'conditions' => '',
+                                'fields' => '',
+                                'order' => ''
+                        ),
+                'Permission' => array(
+			'className' => 'Permission',
+			'foreignKey' => 'client',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+            );
 }

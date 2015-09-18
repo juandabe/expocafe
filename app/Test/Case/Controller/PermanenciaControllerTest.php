@@ -12,7 +12,21 @@ class PermanenciaControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.permanencium'
+		'app.permanencium',
+		'app.user',
+		'app.rol',
+		'app.pqr',
+		'app.statepqr',
+		'app.pqrs',
+		'app.typepqr',
+		'app.clientdocument',
+		'app.document',
+		'app.statedocument',
+		'app.bill',
+		'app.billdetailitem',
+		'app.item',
+		'app.auditeventuser',
+		'app.auditevent'
 	);
 
 /**

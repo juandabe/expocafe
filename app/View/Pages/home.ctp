@@ -34,8 +34,8 @@
 		<li><?php echo $this->Html->link(__('Gestionar PQRs'), array('controller' => 'pqrs', 'action' => 'mypqrs')); ?> </li>
 		<li><?php echo $this->Html->link(__('Actualizar Documentos'), array('controller' => 'clientdocuments', 'action' => 'myupdates')); ?> </li>
 		<li><?php echo $this->Html->link(__('Facturas'), array('controller' => 'bills', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('Permanencia Café'), array('controller' => 'auditeventusers', 'action' => 'add')); ?> </li>
-                <li><?php echo $this->Html->link(__('Pesos Ingreso de Café'), array('controller' => 'users', 'action' => 'add'),array('confirm' => __('Esta consulta es FACTURABLE y sera cargada a usted mensualmente; ¿Desea continuar con la solicitud?')))?> </li>
+		<li><?php echo $this->Html->link(__('Permanencia Café'), array('controller' => 'permissions', 'action' => 'querypermanencia', 1),array('confirm' => __('Esta consulta es FACTURABLE y sera cargada a usted mensualmente; ¿Desea continuar con la solicitud?')))?> </li>
+                <li><?php echo $this->Html->link(__('Pesos Ingreso de Café'), array('controller' => 'permissions', 'action' => 'querypesosdescargue', 1),array('confirm' => __('Esta consulta es FACTURABLE y sera cargada a usted mensualmente; ¿Desea continuar con la solicitud?')))?> </li>
                 <li><?php echo $this->Html->link(__('Embalaje'), array('controller' => 'auditeventusers', 'action' => 'add')); ?> </li>
                 <li><?php echo $this->Html->link(__('Inventario Insumos'), array('controller' => 'auditeventusers', 'action' => 'add')); ?> </li>
                 <li><?php echo $this->Html->link(__('Configuración Usuario'), array('controller' => 'users', 'action' => 'viewperuser', $userauth['User']['id'])); ?></li>
